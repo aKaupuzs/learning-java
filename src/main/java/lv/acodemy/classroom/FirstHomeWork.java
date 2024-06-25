@@ -92,11 +92,11 @@ public class FirstHomeWork {
         double average = (math + science + english) / 3.0;
         if (average >= 90) {
             System.out.println("You got A");
-        } else if (average < 89 & average > 80) {
+        } else if (average < 90 & average > 80) {
             System.out.println("You got B");
-        } else if (average < 79 & average > 70) {
+        } else if (average <= 79 & average > 70) {
             System.out.println("You got C");
-        } else if (average < 69 & average > 60) {
+        } else if (average <= 69 & average >= 60) {
             System.out.println("You got D");
         } else if (average < 60) {
             System.out.println("You got F");
@@ -105,7 +105,7 @@ public class FirstHomeWork {
         }
         //File extension checker: Write a Java program that takes a filename as input and checks if it has a valid file extension. Assume valid extensions are ".txt", ".doc", and ".pdf". If the file has a valid extension, print "Valid file extension," otherwise print "Invalid file extension."
 
-        String doc = "text.jpeg";
+        String doc = "text.txt";
         boolean s = doc.endsWith(".txt") || doc.endsWith(".doc") || doc.endsWith(".pdf");
         if (s) {
             System.out.println("Valid file extension");
